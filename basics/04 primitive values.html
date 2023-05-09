@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // dynamicznie typowany język
+      let num = 89; // liczba - Number
+      let data = 10; // liczba - Number
+      data = "Hello"; // tekst - String
+      data = "Hello"; // tekst - String - to samo, ale z apostrofami
+      data = `Hello
+        World!
+        and ${num}
+        Hello Again!`; // łańcuch znaków - String - jest w backtickach to nazywamy go template literals
+      console.log(data);
+      let flag = true; // wartość logiczna tzw. Boolean - wartość true (prawda)
+      flag = false; // Boolean - wartość false (fałsz)
+      let someValue; // Brak przypisania wartości podczas deklaracji zmiennej automatycznie przypisze wartość undefined
+      console.log(someValue); // undefined
+      someValue = 77;
+      console.log(someValue); //undefined nadpisane przez wartość 77
+      someValue = null; // null
+      console.log(someValue);
+
+      // Symbol
+      // BigInt
+
+      // Zmienne zawsze deklarujemy przed ich użyciem
+      // console.log(name); // Cannot access 'name' before initialization
+      let name = "Ania";
+      console.log(name);
+
+      // let name = "Daniel"; // Uncaught SyntaxError: Identifier 'name' has already been declared
+
+      name = "Daniel"; // poprawny sposób zmiany wartości zmiennej (bez let)
+      console.log(name);
+    </script>
+  </body>
+</html>
